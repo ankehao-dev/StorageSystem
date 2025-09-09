@@ -4,6 +4,8 @@
 [![built for RaspberryPi](https://img.shields.io/badge/Built%20for-RaspberryPi-green.svg)](https://www.raspberrypi.orgx/)
 [![built with JavaFX](https://img.shields.io/badge/built%20with-JavaFX-red.svg)](http://www.javafxtutorials.com/whatisjavafx)
 
+> **Note**: This is a test verification PR created by Devin AI to verify repository access and PR creation capabilities.
+
 ## Personal Stock Control System
 
 >Don't you know the struggle with going to the grocery store and only then realizing you forgot to check what you still got at home and what you should buy.
