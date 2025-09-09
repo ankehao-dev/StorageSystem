@@ -7,8 +7,8 @@
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../../../../Applications/Eclipse.app/Contents/Eclipse/"/>
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.8"/>
-    <property name="source" value="1.8"/>
+    <property name="target" value="17"/>
+    <property name="source" value="17"/>
     <path id="Maven Dependencies.libraryclasspath">
         <pathelement location="../../../.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar"/>
         <pathelement location="../../../.m2/repository/org/apache/logging/log4j/log4j-api/2.4/log4j-api-2.4.jar"/>
