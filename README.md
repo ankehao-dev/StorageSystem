@@ -77,9 +77,9 @@ Total costs: 178€
 <br />
 
 <h4>Running the JavaFX .jar on PI</h4>
-<p>Starting a JavaFX Application on a RaspberryPi isn't that easy, since Oracle removed JFX from their ARM install. <br />
-<b>Problem</b>: Installing Java ARM and getting JavaFX seperately <br />
-<b>Solution</b>: Installing the latest Oracle Java ARM version, removing all the other Java installations (making sure the now installed one is used). Downloading the "JavaFX Embedded SDK" here: http://gluonhq.com/labs/javafxports/downloads/ and extracting the parts in the corresponding folders of the oracle Java version.</p>
+<p>Starting a JavaFX Application on a RaspberryPi requires Java 17 with JavaFX support. <br />
+<b>Problem</b>: Installing Java 17 ARM and JavaFX dependencies <br />
+<b>Solution</b>: Install OpenJDK 17 ARM64 build for Raspberry Pi. JavaFX dependencies are now included in the Maven build, so no separate JavaFX Embedded SDK installation is needed. The application startup scripts should use Java 17.</p>
 
 <br />
 
