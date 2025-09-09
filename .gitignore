@@ -1,2 +1,4 @@
 A1.log
 *.ma
+target/
+*.class

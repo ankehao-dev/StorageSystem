@@ -70,6 +70,21 @@ Total costs: 178€
 
 <h2>Documentation of the problems with solutions</h2>
 <h4>Running JavaFX with Maven</h4>
+<h3>Raspberry Pi (ARM64) Java 17 Runtime</h3>
+<p>As of Java 17, JavaFX is no longer bundled with the JDK. Use OpenJDK 17 on Raspberry Pi and add JavaFX modules via Maven.</p>
+<ul>
+<li>Install OpenJDK 17 (ARM64) on Raspberry Pi:
+  <pre><code>sudo apt update
+sudo apt install openjdk-17-jdk</code></pre>
+</li>
+<li>Do not install the separate "JavaFX Embedded SDK" anymore. The project now uses Maven to fetch JavaFX 17 modules (javafx-controls, javafx-fxml).</li>
+<li>Startup scripts: ensure they use Java 17. Example:
+  <pre><code>JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+"$JAVA_HOME/bin/java" -jar StoreManagement-0.0.1-SNAPSHOT.jar</code></pre>
+</li>
+</ul>
+
+
 <p>The first small problem was to get JavaFX running with Maven. Since i wanted to use the Logging-Framework Log4J, Maven was pretty easy to use and a good choice. <br />
 <b>Problem</b>: Deploying JavaFX as .jar to be executed via the commanline <br />
 <b>Solution</b>: Using the "JavaFX Maven Plugin" from https://github.com/javafx-maven-plugin/javafx-maven-plugin and building the .jar file on a PC/MAC/Linux computer</p>
