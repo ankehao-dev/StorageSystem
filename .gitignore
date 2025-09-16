@@ -1,2 +1,16 @@
 A1.log
 *.ma
+.sdkmanrc
+.vscode
+logs
+StoreManagement/target
+StoreManagement/classpath.txt
+StoreManagement/.settings
+StoreManagement/.classpath
+StoreManagement/.project
+StoreManagement/.recommenders
+StoreManagement/.metadata
+*.jar
+*.war
+*.ear
+hs_err_pid*.log
